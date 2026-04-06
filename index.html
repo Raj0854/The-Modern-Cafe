@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Modern Café</title>
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)); 
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+
+    .navbar-brand {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #f5c518 !important;
+    }
+    .cup {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 15px;
+      
+    }
+
+    .hero {
+      height: 480px;
+      background: linear-gradient(rgba(23, 22, 22, 0.8), rgba(26, 26, 26, 0.8)), url(/img/hero-bg.jpg) no-repeat center center;
+      background-size: cover;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+    }
+   
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .btn-cafe {
+      background-color: #d4a017;
+      color: #000;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 50px;
+      transition: all 0.3s;
+    }
+
+    .btn-cafe:hover {
+      background-color: #f5c518;
+      transform: translateY(-3px);
+      color: #000;
+    }
+
+    .nav-link {
+      color: #ddd !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #f5c518 !important;
+      border-bottom: 2px solid #f5c518;
+    }
+    .main {
+      background :  url(/img/main-bg.jpg) no-repeat center center;
+      background-size: cover;
+      border-radius: 15px;
+    } 
+
+    .menu-card {
+      background-color: rgba(0, 0, 0, 0.3);
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.5s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(178, 133, 21, 0.90);
+    }
+
+    .menu-card img {
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .price {
+      color: #f5c518;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      color: #f5c518;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .combo-box {
+      background:rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MODERN CAFÉ <img src="/img/brand-logo.png" alt="" class="cup"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="coffee.html">Coffee</a></li>
+          <li class="nav-item"><a class="nav-link" href="breakfast.html">Breakfast</a></li>
+          <li class="nav-item"><a class="nav-link" href="desserts.html">Desserts</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Orders</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container text-center text-light hero-image">
+      <div class="col-lg-8 mx-auto">
+        <h1>Welcome to Our Café</h1>
+        <p class="lead mb-4">Experience the taste of our delicious menu</p>
+        <div>
+         <a href="coffee.html" class="btn btn-cafe btn-lg me-3">Explore Menu</a>
+          <button class="btn btn-outline-light btn-lg">Order Online</button>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- Menu Section -->
+  <section class="main py-5">
+    <div class="container ">
+      <h2 class="section-title text-center">Our Coffee Selection</h2>
+
+      <div class="row g-4">
+        <!-- Espresso -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card menu-card h-100">
+            <img src="/img/espresso.png" class="card-img-top" alt="Espresso">
+            <div class="card-body text-center">
+              <h5 class="card-title text-warning  ">Espresso</h5>
+              <p class="card-text text-light">Strong and rich shot of coffee</p>
+              <p class="price"> ₹150</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cappuccino -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card menu-card h-100">
+            <img src="/img/cappuccino.png" class="card-img-top" alt="Cappuccino">
+            <div class="card-body text-center">
+              <h5 class="card-title text-warning  ">Cappuccino</h5>
+              <p class="card-text text-light">Espresso with steamed milk and foam</p>
+              <p class="price"> ₹180</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Latte -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card menu-card h-100">
+            <img src="/img/latte.png" class="card-img-top" alt="Latte">
+            <div class="card-body text-center">
+              <h5 class="card-title text-warning  ">Latte</h5>
+              <p class="card-text text-light">Creamy espresso with steamed milk</p>
+              <p class="price"> ₹200</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mocha -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card menu-card h-100">
+            <img src="/img/mocha.png" class="card-img-top" alt="Mocha">
+            <div class="card-body text-center">
+              <h5 class="card-title text-warning  ">Mocha</h5>
+              <p class="card-text text-light">Espresso with chocolate & whipped cream</p>
+              <p class="price"> ₹220</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breakfast Combo -->
+      <div class="row mt-5">
+        <div class="col-lg-8 mx-auto">
+          <div class="combo-box text-center">
+            <h3 class="text-warning mb-3">Breakfast Combo</h3>
+            <p class="lead mb-4">Enjoy a fresh pastry with any coffee</p>
+            <button  href="#" class="btn btn-cafe btn-lg">Explore Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center text-light">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Modern Café • Crafted with Passion ❤️ for Coffee 🍵.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

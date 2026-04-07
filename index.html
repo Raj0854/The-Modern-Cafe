@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Modern Café</title>
   <link rel="icon" type="image/x-icon" href="img/logo.png">
-  
+
   <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     body {
-      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)); 
+      background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
       background-size: cover;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
@@ -25,11 +24,12 @@
       letter-spacing: 3px;
       color: #f5c518 !important;
     }
+
     .cup {
       width: 40px;
       height: 40px;
       margin-bottom: 15px;
-      
+
     }
 
     .hero {
@@ -43,7 +43,7 @@
       text-align: center;
 
     }
-   
+
     .hero h1 {
       font-size: 3.5rem;
       font-weight: 700;
@@ -71,20 +71,27 @@
       color: #000;
     }
 
+    .navbar {
+      background-color: rgba(20, 20, 20, 0.98) !important;
+      backdrop-filter: blur(10px);
+    }
+
     .nav-link {
       color: #ddd !important;
       font-weight: 500;
     }
 
-    .nav-link:hover, .nav-link.active {
+    .nav-link:hover,
+    .nav-link.active {
       color: #f5c518 !important;
       border-bottom: 2px solid #f5c518;
     }
+
     .main {
-      background :  url(img/main-bg.jpg) no-repeat center center;
+      background: url(img/main-bg.jpg) no-repeat center center;
       background-size: cover;
       border-radius: 15px;
-    } 
+    }
 
     .menu-card {
       background-color: rgba(0, 0, 0, 0.3);
@@ -118,7 +125,7 @@
     }
 
     .combo-box {
-      background:rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.5);
       border-radius: 15px;
       padding: 30px;
     }
@@ -126,12 +133,25 @@
     footer {
       background-color: rgba(0, 0, 0, 0.8);
     }
+
+    .badge-new {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #f5c518;
+      color: #000;
+      font-size: 0.85rem;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-weight: 400;
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">MODERN CAFÉ <img src="img/brand-logo.png" alt="" class="cup"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -156,12 +176,12 @@
         <h1>Welcome to Our Café</h1>
         <p class="lead mb-4">Experience the taste of our delicious menu</p>
         <div>
-         <a href="coffee.html" class="btn btn-cafe btn-lg me-3">Explore Menu</a>
+          <a href="coffee.html" class="btn btn-cafe btn-lg me-3">Explore Menu</a>
           <button class="btn btn-outline-light btn-lg">Order Online</button>
         </div>
       </div>
     </div>
-  </section> 
+  </section>
 
   <!-- Menu Section -->
   <section class="main py-5">
@@ -172,6 +192,8 @@
         <!-- Espresso -->
         <div class="col-md-6 col-lg-3">
           <div class="card menu-card h-100">
+            <span class="badge-new">Popular</span>
+
             <img src="img/espresso.png" class="card-img-top" alt="Espresso">
             <div class="card-body text-center">
               <h5 class="card-title text-warning  ">Espresso</h5>
@@ -224,7 +246,7 @@
           <div class="combo-box text-center">
             <h3 class="text-warning mb-3">Breakfast Combo</h3>
             <p class="lead mb-4">Enjoy a fresh pastry with any coffee</p>
-            <button  href="#" class="btn btn-cafe btn-lg">Explore Now</button>
+            <button href="#" class="btn btn-cafe btn-lg">Explore Now</button>
           </div>
         </div>
       </div>
@@ -238,5 +260,8 @@
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

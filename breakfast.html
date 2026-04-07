@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee - Modern Café</title>
+    <title>Breakfast - Modern Café</title>
     <link rel="icon" type="image/x-icon" href="img/logo.png">
 
     <!-- Bootstrap 5 CSS -->
@@ -12,29 +12,17 @@
 
     <style>
         body {
-            background: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.95));
-            background-size: cover;
+            background: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.95)),
+                url('https://grok.x.ai/generated/J5yUn') center/cover fixed;
+            /* Dark coffee beans bg */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #fff;
-        }
-
-        .cup {
-            width: 40px;
-            height: 40px;
-            margin-bottom: 15px;
-
+            color: #f0e6d2;
+            min-height: 100vh;
         }
 
         .navbar {
             background-color: rgba(20, 20, 20, 0.98) !important;
             backdrop-filter: blur(10px);
-        }
-
-        .navbar-brand {
-            font-size: 2.3rem;
-            font-weight: 800;
-            letter-spacing: 3px;
-            color: #f5c518 !important;
         }
 
         .nav-link {
@@ -48,9 +36,22 @@
             border-bottom: 2px solid #f5c518;
         }
 
+        .navbar-brand {
+            font-size: 2.3rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: #f5c518 !important;
+        }
+
+        .cup {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+
         .page-header {
-            background: linear-gradient(rgba(140, 137, 120, 0.75), rgba(0, 0, 0, 0.8)), url(img/coffe-bg.png) no-repeat center center;
-            background-size: cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75)),
+                url('img/breakfast-bg2.png') center/cover;
             height: 380px;
             display: flex;
             align-items: center;
@@ -64,12 +65,11 @@
             font-weight: 700;
             text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
         }
+        .main{
+            background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('img/JQFiB.jpg') center/cover;
+            padding: 60px 0;
 
-        .menu {
-            background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/main-bg.jpg) no-repeat center center;
-            background-size: cover;
             border-radius: 18px;
-            padding: 30px;
         }
 
         .menu-card {
@@ -106,11 +106,6 @@
         .card-body {
             padding: 25px;
         }
-
-        .description {
-            color: #d4d4d4;
-            font-size: 1.05rem;
-        }
         .btn-cafe {
             background-color: #d4a017;
             color: #000;
@@ -124,8 +119,27 @@
             transform: translateY(-3px);
             color: #000;
         }
+
+        .description {
+            color: #d4d4d4;
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+
         footer {
             background-color: rgba(10, 10, 10, 0.95);
+        }
+
+        .badge-new {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #f5c518;
+            color: #000;
+            font-size: 0.85rem;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 700;
         }
     </style>
 </head>
@@ -133,20 +147,17 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                MODERN CAFÉ
-                <img src="/img/brand-logo.png" alt="Logo" class="cup">
-            </a>
+            <a class="navbar-brand" href="index.html">MODERN CAFÉ <img src="img/brand-logo.png" alt="" class="cup"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="coffee.html">Coffee</a></li>
-                    <li class="nav-item"><a class="nav-link" href="breakfast.html">Breakfast</a></li>
+                    <li class="nav-item"><a class="nav-link" href="coffee.html">Coffee</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="breakfast.html">Breakfast</a></li>
                     <li class="nav-item"><a class="nav-link" href="desserts.html">Desserts</a></li>
                     <li class="nav-item"><a class="nav-link" href="order.html">Orders</a></li>
                 </ul>
@@ -157,97 +168,117 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Our Coffee Collection</h1>
-            <p class="lead text-light mt-3">Handcrafted with passion • Served with perfection</p>
+            <h1>Breakfast Menu</h1>
+            <p class="lead text-light mt-3">Start your day with something delicious</p>
         </div>
     </section>
 
-    <!-- Coffee Menu Section -->
-    <section class=" menu py-5">
-        <div class="container ">
-
-            <h2 class="section-title text-center">Coffees</h2>
+    <!-- Breakfast Menu Section -->
+    <section class="main py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Delicious Breakfast</h2>
 
             <div class="row g-4">
 
-                <!-- Espresso -->
+                <!-- Item 1 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card menu-card h-100">
-                        <img src="img/espresso.png" class="card-img-top" alt="Espresso">
+                    <div class="card menu-card h-100 position-relative">
+                        <span class="badge-new">Popular</span>
+                        <img src="img/butter-croissant.png" class="card-img-top"
+                            alt="Butter Croissant">
                         <div class="card-body text-center">
-                            <h5 class="card-title text-warning fs-4">Espresso</h5>
-                            <p class="description">A bold, rich shot of pure coffee with thick golden crema</p>
-                            <p class="price mt-3">₹150</p>
+                            <h5 class="card-title text-warning fs-4">Butter Croissant</h5>
+                            <p class="description">Freshly baked flaky croissant served with butter and jam</p>
+                            <p class="price mt-3">₹120</p>
                             <button class="btn btn-cafe w-100 mt-3">Add to Cart</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Cappuccino -->
+                <!-- Item 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card menu-card h-100">
-                        <img src="img/cappuccino.png" class="card-img-top" alt="Cappuccino">
+                        <img src="img/avocado-toast.png" class="card-img-top"
+                            alt="Avocado Toast">
                         <div class="card-body text-center">
-                            <h5 class="card-title text-warning fs-4">Cappuccino</h5>
-                            <p class="description">Classic espresso topped with steamed milk and silky foam</p>
+                            <h5 class="card-title text-warning fs-4">Avocado Toast</h5>
+                            <p class="description">Smashed avocado on sourdough with cherry tomatoes & poached egg</p>
                             <p class="price mt-3">₹180</p>
                             <button class="btn btn-cafe w-100 mt-3">Add to Cart</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Latte -->
+                <!-- Item 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card menu-card h-100">
-                        <img src="img/latte.png" class="card-img-top" alt="Latte">
+                        <img src="img/pancakes.png" class="card-img-top"
+                            alt="Pancakes">
                         <div class="card-body text-center">
-                            <h5 class="card-title text-warning fs-4">Latte</h5>
-                            <p class="description">Smooth and creamy espresso with perfectly steamed milk</p>
-                            <p class="price mt-3">₹200</p>
-                            <button class="btn btn-cafe w-100 mt-3">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mocha -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card menu-card h-100">
-                        <img src="img/mocha.png" class="card-img-top" alt="Mocha">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-warning fs-4">Mocha</h5>
-                            <p class="description">Rich espresso blended with chocolate and whipped cream</p>
-                            <p class="price mt-3">₹220</p>
-                            <button class="btn btn-cafe w-100 mt-3">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Americano -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card menu-card h-100">
-                        <img src="img/americano.png" class="card-img-top" alt="Americano">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-warning fs-4">Americano</h5>
-                            <p class="description">Espresso diluted with hot water for a smooth black coffee</p>
+                            <h5 class="card-title text-warning fs-4">Classic Pancakes</h5>
+                            <p class="description">Fluffy pancakes with maple syrup, fresh berries & whipped cream</p>
                             <p class="price mt-3">₹160</p>
                             <button class="btn btn-cafe w-100 mt-3">Add to Cart</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Flat White -->
+                <!-- Item 4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card menu-card h-100">
-                        <img src="img/flatwhite.png" class="card-img-top" alt="Flat White">
+                        <img src="img/omelette.png" class="card-img-top"
+                            alt="Omelette">
                         <div class="card-body text-center">
-                            <h5 class="card-title text-warning fs-4">Flat White</h5>
-                            <p class="description">Velvety microfoam with rich espresso base</p>
+                            <h5 class="card-title text-warning fs-4">Cheese Omelette</h5>
+                            <p class="description">Three-egg omelette with cheddar cheese, herbs & toast</p>
+                            <p class="price mt-3">₹170</p>
+                            <button class="btn btn-cafe w-100 mt-3">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <img src="img/breakfast-sandwich.png" class="card-img-top"
+                            alt="Breakfast Sandwich">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-warning fs-4">Breakfast Sandwich</h5>
+                            <p class="description">Toasted bun with egg, cheese, chicken sausage & veggies</p>
                             <p class="price mt-3">₹190</p>
                             <button class="btn btn-cafe w-100 mt-3">Add to Cart</button>
                         </div>
                     </div>
                 </div>
 
+                <!-- Item 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100 position-relative">
+                        <span class="badge-new">New</span>
+                        <img src="img/french-toast.png" class="card-img-top"
+                            alt="French Toast">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-warning fs-4">French Toast</h5>
+                            <p class="description">Golden French toast with cinnamon, honey & fresh fruits</p>
+                            <p class="price mt-3">₹150</p>
+                            <button class="btn btn-cafe w-100 mt-3">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Combo Section -->
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="combo-box text-center p-5"
+                        style="background: linear-gradient(135deg, rgba(40,40,40,0.95), rgba(25,25,25,0.95)); border-radius: 18px;">
+                        <h3 class="text-warning mb-3">Breakfast Combo Special</h3>
+                        <p class="lead mb-4">Any Coffee + Any Breakfast Item = <strong class="text-warning">10%
+                                OFF</strong></p>
+                        <button class="btn btn-cafe btn-lg px-5">Order Combo Now</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -255,7 +286,7 @@
     <!-- Footer -->
     <footer class="py-5 text-center text-light">
         <div class="container">
-            <p class="mb-0">&copy; 2026 Modern Café • Crafted with Passion ❤️ for Coffee 🍵.</p>
+            <p class="mb-0">&copy; 2026 Modern Café • Start Your Day Right with Us</p>
         </div>
     </footer>
 

@@ -156,6 +156,30 @@
             border-radius: 20px;
             font-weight: 400;
         }
+        .cart-summary {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .btn-checkout {
+            background-color: #f5c518;
+            color: #000;
+            border: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+            padding: 12px 30px;
+
+
+        }
+        .btn-clear-cart {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+            padding: 12px 30px;
+            margin-left: 15px;
+        }
     </style>
 </head>
 
@@ -192,7 +216,8 @@
         <div class="col-lg-8 mx-auto">
             <div class="cart-summary">
                 <h4 class="text-warning mb-4 text-center">Your Cart</h4>
-                <div id="cart-items" class="mb-4"></div>
+                <div id="cart-items" class="mb-4 d-flex justify-content-between fs-4"></div>
+
 
                 <hr class="border-secondary">
                 <div class="d-flex justify-content-between fs-4">
@@ -200,8 +225,11 @@
                     <strong id="cart-total" class="text-warning">₹0</strong>
                 </div>
 
-                <button class="btn btn-warning w-100 py-3 mt-4 fw-bold fs-5" onclick="checkout()">
+                <button class="btn-checkout btn-warning  py-3 mt-4 fw-bold fs-5" onclick="checkout()">
                     Proceed to Checkout
+                </button>
+                <button class="btn-clear-cart btn-warning  py-3 mt-4 fw-bold fs-5" onclick="clearCart()">
+                    Clear Cart
                 </button>
             </div>
         </div>
@@ -235,7 +263,12 @@
                         <h5 class="card-title text-warning fs-4">Cappuccino</h5>
                         <p class="description">Classic espresso topped with steamed milk and silky foam</p>
                         <p class="price mt-3">₹180</p>
+<<<<<<< Updated upstream
                         <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Cappuccino', 180)">Add to Cart</button>
+=======
+                        <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Cappuccino', 180)">Add to
+                            Cart</button>
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
@@ -265,7 +298,12 @@
                         <h5 class="card-title text-warning fs-4">Butter Croissant</h5>
                         <p class="description">Freshly baked flaky croissant served with butter and jam</p>
                         <p class="price mt-3">₹120</p>
+<<<<<<< Updated upstream
                         <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Butter Croissant', 120)">Add to Cart</button>
+=======
+                        <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Butter Croissant', 120)">Add to
+                            Cart</button>
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
@@ -278,7 +316,12 @@
                         <h5 class="card-title text-warning fs-4">Avocado Toast</h5>
                         <p class="description">Smashed avocado on sourdough with cherry tomatoes & poached egg</p>
                         <p class="price mt-3">₹180</p>
+<<<<<<< Updated upstream
                         <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Avocado Toast', 180)">Add to Cart</button>
+=======
+                        <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Avocado Toast', 180)">Add to
+                            Cart</button>
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
@@ -291,7 +334,12 @@
                         <h5 class="card-title text-warning fs-4">Classic Pancakes</h5>
                         <p class="description">Fluffy pancakes with maple syrup, fresh berries & whipped cream</p>
                         <p class="price mt-3">₹160</p>
+<<<<<<< Updated upstream
                         <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Classic Pancakes', 160)">Add to Cart</button>
+=======
+                        <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Classic Pancakes', 160)">Add to
+                            Cart</button>
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
@@ -308,7 +356,12 @@
                         <h5 class="card-title text-warning fs-4">Chocolate Lava Cake</h5>
                         <p class="description">Warm molten chocolate cake with vanilla ice cream</p>
                         <p class="price mt-3">₹220</p>
+<<<<<<< Updated upstream
                         <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Chocolate Lava Cake', 220)">Add to Cart</button>
+=======
+                        <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Chocolate Lava Cake', 220)">Add to
+                            Cart</button>
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
@@ -321,7 +374,12 @@
                         <h5 class="card-title text-warning fs-4">New York Cheesecake</h5>
                         <p class="description">Classic creamy cheesecake with berry compote</p>
                         <p class="price mt-3">₹200</p>
+<<<<<<< Updated upstream
                         <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('New York Cheesecake', 200)">Add to Cart</button>
+=======
+                        <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('New York Cheesecake', 200)">Add to
+                            Cart</button>
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
@@ -334,12 +392,17 @@
                         <h5 class="card-title text-warning fs-4">Classic Tiramisu</h5>
                         <p class="description">Coffee-soaked ladyfingers with mascarpone cream</p>
                         <p class="price mt-3">₹180</p>
+<<<<<<< Updated upstream
                         <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Classic Tiramisu', 180)">Add to Cart</button>
+=======
+                        <button class="btn btn-cafe w-100 mt-3" onclick="addToCart('Classic Tiramisu', 180)">Add to
+                            Cart</button>
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
         </div>
-      
+
     </div>
 
     <!-- Footer -->

@@ -1,5 +1,5 @@
 # The-Modern-Cafe
-https://raj0854.github.io/The-Modern-Cafe/
+https://the-modern-cafe.onrender.com/
 
 ## Local ordering backend and admin dashboard
 

@@ -17,8 +17,8 @@ from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parent
 DB_PATH = Path(os.environ.get("CAFE_DB_PATH", ROOT / "data" / "cafe.sqlite3"))
-HOST = os.environ.get("CAFE_HOST", "127.0.0.1")
-PORT = int(os.environ.get("CAFE_PORT", "8000"))
+HOST = "0.0.0.0"
+PORT =  int(os.environ.get("PORT", 10000))
 COOKIE_SECURE = os.environ.get("CAFE_COOKIE_SECURE", "0") == "1"
 MAX_BODY = 64 * 1024
 PBKDF2_ROUNDS = 310_000
